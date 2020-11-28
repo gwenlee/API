@@ -1,12 +1,13 @@
 import googlemaps
 
-mykey = 'AIzaSyBXlIk6oLTO4zrSdkBr4TMyG7lAXi7K4xI'
+mykey = 'mycredentials'
 gmaps = googlemaps.Client(key = mykey)
 
 import pandas as pd
 
-data = pd.read_csv(r"C:\Users\Gwen\Desktop\PSD updates.csv")
+data = pd.read_csv(r"C:Users\Gwen\Address.csv")
 
+#csv file has one colum, which is 'Billing Street', and it contains imcomplete address with their Unit number and Street Address
 series = data['Billing Street']
 data = series.values.tolist()
 
@@ -45,4 +46,4 @@ for i in range(len(data)):
 
 
 export = pd.DataFrame(list)
-export.to_csv(r"C:\Users\Gwen\Desktop\address.csv", index=False, header=False)
+export.to_csv(r"C:\Users\Gwen\address.csv", index=False, header=False)
