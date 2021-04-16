@@ -5,7 +5,7 @@ gmaps = googlemaps.Client(key = mykey)
 
 import pandas as pd
 
-data = pd.read_csv(r"C:\Users\Gwen\Desktop\Updates.csv")
+data = pd.read_csv(r"C:\User\....csv")
 
 #Updates.csv contains one column, which is 'Billing Street' - each row contains incomplete address with unit number and street name format
 
@@ -47,4 +47,4 @@ for i in range(len(data)):
 
 #Completed address will be exported as address.csv 
 export = pd.DataFrame(list)
-export.to_csv(r"C:\Users\Gwen\Desktop\address.csv", index=False, header=False)
+export.to_csv(r"C:\Users\...csv", index=False, header=False)
